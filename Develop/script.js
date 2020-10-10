@@ -20,6 +20,7 @@ var generatePassword = function(){
   }
   if (specialC) {
     charset += " !#$%&'()*+,-./:;<=>?@[]^_{|}~`";
+    charset += '"';
   }
   if (charset === "") {
     window.alert("Sorry, you need more character types in your password.");
